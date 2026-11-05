@@ -2,7 +2,6 @@ import java.util.Scanner;
 /**
  * Ejercicio 02: "Día de la semana: Mostrar el nombre del día de la semana en
  * función del número ingresado (1 para lunes, 2 para martes, etc.)."
- *
  * @author José Paccha y Gabriel Cueva
  * @version 1.0
  */
