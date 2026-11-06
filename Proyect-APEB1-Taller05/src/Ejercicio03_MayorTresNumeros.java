@@ -1,7 +1,7 @@
 import java.util.Scanner;
 /**
  * Ejercicio 03: "Dados tres números distintos, determinar cuál es el mayor."
- * @author Gabriel Cueva y Jose Paccha
+ * @author Gabriel Cueva y José Paccha
  * @version 1.0
  */
 public class Ejercicio03_MayorTresNumeros {
