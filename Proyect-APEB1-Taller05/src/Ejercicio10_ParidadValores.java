@@ -11,3 +11,7 @@ public class Ejercicio10_ParidadValores {
         
     }
 }
+/***
+ * EVIDENCIA DEL RUN:
+ * Pegue aquí la evidencia de la ejecución del .java
+ */

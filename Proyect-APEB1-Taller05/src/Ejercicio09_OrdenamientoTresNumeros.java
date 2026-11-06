@@ -10,3 +10,7 @@ public class Ejercicio09_OrdenamientoTresNumeros {
         
     }
 }
+/***
+ * EVIDENCIA DEL RUN:
+ * Pegue aquí la evidencia de la ejecución del .java
+ */

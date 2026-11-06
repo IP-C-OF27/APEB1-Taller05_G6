@@ -11,3 +11,7 @@ public class Ejercicio08_IMC {
         
     }
 }
+/***
+ * EVIDENCIA DEL RUN:
+ * Pegue aquí la evidencia de la ejecución del .java
+ */
