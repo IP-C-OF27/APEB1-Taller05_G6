@@ -8,10 +8,31 @@ import java.util.Scanner;
 public class Ejercicio07_RangoNotas {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        
+        System.out.print("Ingrese su calificación sobre 100 puntos: ");
+        int nota = tcl.nextInt();
+        if (nota >= 0 && nota <= 100){
+            if (nota >= 90)
+            System.out.println("Su rango es: A");
+            else
+                if (nota >= 80)
+                System.out.println("Su rango es: B");
+                else
+                    if (nota >= 70)
+                    System.out.println("Su rango es: C");
+                    else
+                        if (nota >= 60)
+                        System.out.println("Su rango es: D");
+                        else
+                            System.out.println("Su rango es: F");
+        }
+        else
+            System.out.println("Nota inválida");
     }
 }
 /***
  * EVIDENCIA DEL RUN:
- * Pegue aquí la evidencia de la ejecución del .java
+ * run-single:
+Ingrese su calificaci�n sobre 100 puntos: 67
+Su rango es: D
+BUILD SUCCESSFUL (total time: 2 seconds)
  */
