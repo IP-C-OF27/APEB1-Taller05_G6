@@ -7,10 +7,40 @@ import java.util.Scanner;
 public class Ejercicio09_OrdenamientoTresNumeros {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        
+        System.out.print("Ingrese tres valores: ");
+        int val1 = tcl.nextInt();
+        int val2 = tcl.nextInt();
+        int val3 = tcl.nextInt();
+        if (val1 <= val2 && val1 <= val3) {
+            System.out.print("Orden ascendente: " + val1 + ", ");
+            if (val2 <= val3)
+                System.out.println(val2 + (", ") + val3);
+            else
+                System.out.println(val3 + (", ") + val2);
+        } 
+        else 
+            if (val2 <= val1 && val2 <= val3) {
+            System.out.print("Orden ascendente: " + val2 + ", ");
+            if (val1 <= val3) 
+                System.out.println(val1 + (", ") + val3);
+            else 
+                System.out.println(val3 + (", ") + val1);
+            } 
+            else 
+                if (val3 <= val1 && val3 <= val2) {
+                System.out.print("Orden ascendente: " + val3 + ", ");
+                if (val1 <= val2)
+                    System.out.println(val1 + (", ") + val2);
+                else
+                    System.out.println(val2 + (", ") + val1);
+                }
     }
 }
 /***
  * EVIDENCIA DEL RUN:
- * Pegue aquí la evidencia de la ejecución del .java
+Ingrese tres valores: 4
+6
+3
+Orden ascendente: 3, 4, 6
+BUILD SUCCESSFUL (total time: 2 seconds)
  */
