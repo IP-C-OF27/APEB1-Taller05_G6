@@ -8,10 +8,22 @@ import java.util.Scanner;
 public class Ejercicio10_ParidadValores {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        
+        System.out.print("Ingrese un numero entero: ");
+        int numero=tcl.nextInt();
+        if (numero % 2 ==0)
+            System.out.println("El numero "+numero+" es par.");
+        else 
+            System.out.println("El numero "+numero+" es impar.");
     }
 }
 /***
  * EVIDENCIA DEL RUN:
- * Pegue aquí la evidencia de la ejecución del .java
+ run-single:
+Ingrese un numero entero: -208
+El numero -208 es par.
+BUILD SUCCESSFUL (total time: 5 seconds)
+* run-single:
+Ingrese un numero entero: 93
+El numero 93 es impar.
+BUILD SUCCESSFUL (total time: 2 seconds)
  */

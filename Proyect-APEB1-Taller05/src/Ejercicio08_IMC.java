@@ -8,10 +8,32 @@ import java.util.Scanner;
 public class Ejercicio08_IMC {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        
+        double imc;
+        System.out.print("Ingrese su peso en kg: ");
+        double peso=tcl.nextDouble();
+        System.out.print("Ingrese su estatura en m: ");
+        double estatura=tcl.nextDouble();
+        imc= peso / (estatura*estatura);
+        System.out.printf("Su IMC es: %.2f.\n", imc);
+        if (imc<=18.5)
+            System.out.println("Bajo peso");
+        else
+            if (imc>=18.5 && imc <=24.9)
+                System.out.println("Peso normal");
+            else 
+                if (imc >=25 && imc <= 29.9)
+                    System.out.println("Sobrepeso");
+                else 
+                    if (imc>=30)
+                        System.out.println("Obesidad");
     }
 }
 /***
  * EVIDENCIA DEL RUN:
- * Pegue aquí la evidencia de la ejecución del .java
+ * run-single:
+Ingrese su peso en kg: 72,3
+Ingrese su estatura en m: 1,70
+Su IMC es: 25,02.
+Sobrepeso
+BUILD SUCCESSFUL (total time: 37 seconds)
  */

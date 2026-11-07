@@ -8,9 +8,9 @@ public class Ejercicio09_OrdenamientoTresNumeros {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
         System.out.print("Ingrese tres valores: ");
-        int val1 = tcl.nextInt();
-        int val2 = tcl.nextInt();
-        int val3 = tcl.nextInt();
+        double val1 = tcl.nextDouble();
+        double val2 = tcl.nextDouble();
+        double val3 = tcl.nextDouble();
         if (val1 <= val2 && val1 <= val3) {
             System.out.print("Orden ascendente: " + val1 + ", ");
             if (val2 <= val3)
@@ -20,23 +20,23 @@ public class Ejercicio09_OrdenamientoTresNumeros {
         } 
         else 
             if (val2 <= val1 && val2 <= val3) {
-            System.out.print("Orden ascendente: " + val2 + ", ");
-            if (val1 <= val3) 
-                System.out.println(val1 + (", ") + val3);
-            else 
-                System.out.println(val3 + (", ") + val1);
+                System.out.print("Orden ascendente: " + val2 + ", ");
+                if (val1 <= val3) 
+                    System.out.println(val1 + (", ") + val3);
+                else 
+                    System.out.println(val3 + (", ") + val1);
             } 
             else 
                 if (val3 <= val1 && val3 <= val2) {
-                System.out.print("Orden ascendente: " + val3 + ", ");
-                if (val1 <= val2)
-                    System.out.println(val1 + (", ") + val2);
+                    System.out.print("Orden ascendente: " + val3 + ", ");
+                    if (val1 <= val2)
+                        System.out.println(val1 + (", ") + val2);
+                }
                 else
                     System.out.println(val2 + (", ") + val1);
-                }
     }
 }
-/***
+/**
  * EVIDENCIA DEL RUN:
 Ingrese tres valores: 4
 6

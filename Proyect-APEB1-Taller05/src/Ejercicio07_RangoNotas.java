@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Ejercicio07_RangoNotas {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        System.out.print("Ingrese su calificación sobre 100 puntos: ");
-        int nota = tcl.nextInt();
+        System.out.print("Ingrese su calificacion sobre 100 puntos: ");
+        double nota = tcl.nextDouble();
         if (nota >= 0 && nota <= 100){
             if (nota >= 90)
             System.out.println("Su rango es: A");
