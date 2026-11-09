@@ -11,10 +11,41 @@ import java.util.Scanner;
 public class Ejercicio13_Reservas {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        
+        System.out.print("Ingrese el números de días de hospedaje: ");
+        int numDias = tcl.nextInt();
+        System.out.print("Ingrese el precio por día: ");
+        double precioDia = tcl.nextInt();
+        double subtotal = precioDia * numDias;
+        double descuento = 0;
+        double total = 0;
+        if (numDias > 15){
+            descuento = subtotal * 0.2;
+            total = subtotal - descuento;
+        }
+        else
+            if (numDias > 10){
+                descuento = subtotal * 0.15;
+                total = subtotal - descuento;
+            }
+            else
+                if (numDias > 5){
+                    descuento = subtotal * 0.1;
+                    total = subtotal - descuento;
+                }
+                else
+                    total = subtotal;
+        System.out.println("Subtotal: $" + subtotal);
+        System.out.println("El descuento aplicado es de: $" + descuento);
+        System.out.println("El total a pagar es: $" + total);
     }
 }
 /***
  * EVIDENCIA DEL RUN:
- * Pegue aquí la evidencia de la ejecución del .java
+run-single:
+Ingrese el n�meros de d�as de hospedaje: 14
+Ingrese el precio por d�a: 20
+Subtotal: $280.0
+El descuento aplicado es de: $42.0
+El total a pagar es: $238.0
+BUILD SUCCESSFUL (total time: 7 seconds)
  */

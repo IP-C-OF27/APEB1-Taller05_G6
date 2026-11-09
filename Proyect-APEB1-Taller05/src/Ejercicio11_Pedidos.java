@@ -10,10 +10,21 @@ import java.util.Scanner;
 public class Ejercicio11_Pedidos {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        
+        System.out.print("Ingrese el precio unitario del producto que desea comprar: ");
+        double precioUnit = tcl.nextDouble();
+        System.out.print("Ingrese la cantidad que desea comprar: ");
+        double cantidad = tcl.nextDouble();
+        double precioTotal = precioUnit * cantidad;
+        if (cantidad > 50)
+            precioTotal = precioTotal * 0.85;
+        System.out.println("El valor final a pagar será: $" + precioTotal);
     }
 }
 /***
  * EVIDENCIA DEL RUN:
- * Pegue aquí la evidencia de la ejecución del .java
+ run-single:
+Ingrese el precio unitario del producto que desea comprar: 1,25
+Ingrese la cantidad que desea comprar: 60
+El valor final a pagar ser�: $63.75
+BUILD SUCCESSFUL (total time: 13 seconds)
  */
