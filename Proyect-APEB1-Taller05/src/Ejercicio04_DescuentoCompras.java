@@ -12,7 +12,7 @@ public class Ejercicio04_DescuentoCompras {
         System.out.print("Deme el precio: ");
         precio=tcl.nextDouble();
         if (precio > 100)
-            precio=precio*0.9;
+            precio*=0.9;
         System.out.println(precio);
     }
 }
