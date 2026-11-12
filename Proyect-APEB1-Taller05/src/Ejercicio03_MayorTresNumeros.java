@@ -7,16 +7,19 @@ import java.util.Scanner;
 public class Ejercicio03_MayorTresNumeros {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        System.out.print("Ingrese 3 numeros: ");
-        double valor1 = tcl.nextDouble();
-        double valor2 = tcl.nextDouble();
-        double valor3 = tcl.nextDouble();
-        if (valor1 > valor2 && valor1 > valor3)
-            System.out.println("El mayor de los valores es: " + valor1);
-        if (valor2 > valor1 && valor2 > valor3)
-            System.out.println("El mayor de los valores es: " + valor2);
-        if (valor3 > valor2 && valor3 > valor1)
-            System.out.println("El mayor de los valores es: " + valor3);
+        System.out.print("Ingrese 3 numeros distintos: ");
+        double valor1 = tcl.nextDouble(), valor2 = tcl.nextDouble(), valor3 = tcl.nextDouble(), mayor;
+        if (valor1 != valor2 && valor2 != valor3 && valor1 != valor3){
+            if (valor1 > valor2)
+                mayor = valor1;
+            else
+                mayor = valor2;
+            if (mayor < valor3)
+                mayor = valor3;
+        }
+        System.out.println("El mayor de los valores es: "+ mayor);
+        else
+            System.out.println("Entrada inválida, por favor revise que sean números distintos.");
     }
 }
 /***
