@@ -16,8 +16,8 @@ public class Ejercicio03_MayorTresNumeros {
                 mayor = valor2;
             if (mayor < valor3)
                 mayor = valor3;
-        }
         System.out.println("El mayor de los valores es: "+ mayor);
+        }
         else
             System.out.println("Entrada inválida, por favor revise que sean números distintos.");
     }
