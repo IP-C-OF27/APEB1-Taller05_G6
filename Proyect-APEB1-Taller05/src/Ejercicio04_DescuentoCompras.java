@@ -7,28 +7,19 @@ import java.util.Scanner;
  */
 public class Ejercicio04_DescuentoCompras {
     public static void main(String[] args) {
+        double precio;
         Scanner tcl = new Scanner(System.in);
-        double precFin;
-        System.out.print("Iingrese el precio original: ");
-        double precOrig = tcl.nextDouble();
-        if (precOrig>100){
-            precFin = precOrig-(precOrig*0.10);
-            System.out.println("Tiene un 10% de descuento el precio final es: : $" + precFin);
-        }
-        else{
-            precFin=precOrig;
-            System.out.println("NO tine descuento, el precio final es: $" + precFin);
-        }     
+        System.out.print("Deme el precio: ");
+        precio=tcl.nextDouble();
+        if (precio > 100)
+            precio=precio*0.9;
+        System.out.println(precio);
     }
 }
 /***
  * EVIDENCIA DEL RUN:
- * run-single:
-Iingrese el precio original: 200
-Tiene un 10% de descuento el precio final es: : $180.0
-BUILD SUCCESSFUL (total time: 2 seconds)
-* run-single:
-Iingrese el precio original: 30
-NO tine descuento, el precio final es: $30.0
+run-single:
+Deme el precio: 1000
+900.0
 BUILD SUCCESSFUL (total time: 3 seconds)
  */
