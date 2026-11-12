@@ -8,9 +8,7 @@ public class Ejercicio09_OrdenamientoTresNumeros {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
         System.out.print("Ingrese tres valores: ");
-        double val1 = tcl.nextDouble();
-        double val2 = tcl.nextDouble();
-        double val3 = tcl.nextDouble();
+        double val1 = tcl.nextDouble(), val2 = tcl.nextDouble(), val3 = tcl.nextDouble();
         if (val1 <= val2 && val1 <= val3) {
             System.out.print("Orden ascendente: " + val1 + ", ");
             if (val2 <= val3)

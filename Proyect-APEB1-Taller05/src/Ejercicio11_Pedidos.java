@@ -16,7 +16,7 @@ public class Ejercicio11_Pedidos {
         double cantidad = tcl.nextDouble();
         double precioTotal = precioUnit * cantidad;
         if (cantidad > 50)
-            precioTotal = precioTotal * 0.85;
+            precioTotal *= 0.85;
         System.out.println("El valor final a pagar será: $" + precioTotal);
     }
 }

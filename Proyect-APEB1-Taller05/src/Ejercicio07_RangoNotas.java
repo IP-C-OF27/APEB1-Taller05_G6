@@ -12,16 +12,16 @@ public class Ejercicio07_RangoNotas {
         double nota = tcl.nextDouble();
         if (nota >= 0 && nota <= 100){
             if (nota >= 90)
-            System.out.println("Su rango es: A");
+                System.out.println("Su rango es: A");
             else
                 if (nota >= 80)
-                System.out.println("Su rango es: B");
+                    System.out.println("Su rango es: B");
                 else
                     if (nota >= 70)
-                    System.out.println("Su rango es: C");
+                        System.out.println("Su rango es: C");
                     else
                         if (nota >= 60)
-                        System.out.println("Su rango es: D");
+                            System.out.println("Su rango es: D");
                         else
                             System.out.println("Su rango es: F");
         }
